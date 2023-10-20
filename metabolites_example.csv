@@ -1,0 +1,17 @@
+type,name,equation
+metabolite,A,
+metabolite,B,
+metabolite,C,
+metabolite,D,
+metabolite,E,
+metabolite,P,
+reaction,R1,--> A
+reaction,R2,<--> B
+reaction,R3,P -->
+reaction,R4,E -->
+reaction,R5,A --> B
+reaction,R6,A --> C
+reaction,R7,A --> D
+reaction,R8,B <--> C
+reaction,R9,B --> P
+reaction,R10,C + D --> E + P
