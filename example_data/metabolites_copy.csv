@@ -1,0 +1,68 @@
+type,name,equation
+metabolite,Nucleotides,
+metabolite,Ribose-5-P-NADPH,
+metabolite,Glucose-6-P,
+metabolite,PPP(oxidative),
+metabolite,Fructose-6-P,
+metabolite,Fructose-1-6-P,
+metabolite,PPP(non-oxidative),
+metabolite,Glycerol-3-P,
+metabolite,DHAP,
+metabolite,Glyceraldehyde-3-phosphate,
+metabolite,1-3-Biphosphoglycerate,
+metabolite,3-Phosphoglycerate,
+metabolite,2-Phosphoglycerate,
+metabolite,Phosphoenolpyruvate,
+metabolite,Malate,
+metabolite,Succinyl-CoA,
+metabolite,a-KG,
+metabolite,Isocitrate,
+metabolite,Glutamine,
+metabolite,ASCT2,
+metabolite,Fumarate,
+metabolite,Ribose-5-P,
+metabolite,Lipids,
+metabolite,Pyruvate,
+metabolite,Lactate,
+metabolite,Citrate,
+metabolite,Glutamate,
+metabolite,Oxaloacetate,
+metabolite,Serine_Pathway,
+metabolite,MCT1,
+metabolite,Succinate,
+reaction,R1,Glutamine --> ASCT2
+reaction,R2,ASCT2 --> Glutamine
+reaction,R4,Glutamine --> Glutamate
+reaction,R5,Glutamate --> a-KG
+reaction,R6,a-KG --> Succinyl-CoA
+reaction,R7,Succinyl-CoA --> Succinate
+reaction,R8,Succinate --> Fumarate
+reaction,R9,Fumarate --> Malate
+reaction,R10,Malate --> Oxaloacetate
+reaction,R11,Oxaloacetate --> Citrate
+reaction,R12,Citrate <--> Isocitrate
+reaction,R13,Isocitrate <--> a-KG
+reaction,PEPCK2,Oxaloacetate --> Phosphoenolpyruvate
+reaction,ENO,Phosphoenolpyruvate --> 2-Phosphoglycerate
+reaction,PGM,2-Phosphoglycerate --> 3-Phosphoglycerate
+reaction,R18,3-Phosphoglycerate --> Serine_Pathway
+reaction,PGK,3-Phosphoglycerate --> 1-3-Biphosphoglycerate
+reaction,GAPDH,1-3-Biphosphoglycerate --> Glyceraldehyde-3-phosphate
+reaction,TPI,DHAP <--> Glyceraldehyde-3-phosphate
+reaction,R22,DHAP --> Glycerol-3-P
+reaction,R23,Glyceraldehyde-3-phosphate --> PPP(non-oxidative)
+reaction,R24,PPP(non-oxidative) --> Ribose-5-P
+reaction,R25,Ribose-5-P --> Nucleotides
+reaction,ALDO,DHAP --> Fructose-1-6-P
+reaction,ALDO,Glyceraldehyde-3-phosphate --> Fructose-1-6-P
+reaction,FBP,Fructose-1-6-P --> Fructose-6-P
+reaction,R29,Fructose-6-P --> PPP(non-oxidative)
+reaction,PGI,Fructose-6-P --> Glucose-6-P
+reaction,R31,Glucose-6-P --> PPP(oxidative)
+reaction,R32,PPP(oxidative) --> Ribose-5-P-NADPH
+reaction,R33,Ribose-5-P-NADPH --> Lipids
+reaction,R34,Ribose-5-P-NADPH --> Nucleotides
+reaction,PC,Pyruvate --> Oxaloacetate
+reaction,LDH,Lactate --> Pyruvate
+reaction,R38,Lactate --> MCT1
+reaction,R39,MCT1 --> Lactate
