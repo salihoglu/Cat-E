@@ -1,0 +1,88 @@
+type,name,equation
+metabolite,Glutamine,
+metabolite,Gln,
+metabolite,Amino_acid_Nucleotides,
+metabolite,Glu,
+metabolite,Acetyl_CoA,
+metabolite,Fatty_acids_Acetylation,
+metabolite,OAA,
+metabolite,Cit,
+metabolite,NADH,
+metabolite,a_KG,
+metabolite,FADH2,
+metabolite,Mal,
+metabolite,Asp,
+metabolite,Pyruvate,
+metabolite,PEP,
+metabolite,NAD,
+metabolite,Lactate,
+metabolite,Alanine,
+metabolite,2_PG,
+metabolite,3_PG,
+metabolite,1_3_BPG,
+metabolite,Serine_Glycine,
+metabolite,DHAP,
+metabolite,GAP,
+metabolite,Fru_1_6_P,
+metabolite,Fru_6_P,
+metabolite,Glycerol_P,
+metabolite,Glycerol,
+metabolite,PPP,
+metabolite,Ribose_5_P,
+metabolite,NADPH,
+metabolite,Glc_6_P,
+metabolite,Glucose,
+metabolite,Glc_1_P,
+metabolite,Glycogen,
+metabolite,Hexosamine_pathway,
+metabolite,Glycosylation,
+metabolite,O_GlcNacylation,
+metabolite,1C_units,
+metabolite,Nucleotides,
+metabolite,Nucleotides_Asparagine,
+metabolite,Lipid_glycerol_backbone,
+metabolite,Amino_acids,
+reaction,R1,Glutamine--> Gln
+reaction,R2,Gln --> Amino_acid_Nucleotides
+reaction,R3,Gln --> Glu
+reaction,R4,Glu --> a_KG
+reaction,R5,a_KG --> NADH + FADH2 + Mal
+reaction,R6,Mal --> NADH + OAA
+reaction,PCK2,OAA -->  PEP
+reaction,PC,Pyruvate --> OAA
+reaction,PDH,Pyruvate --> Acetyl_CoA
+reaction,R10,Acetyl_CoA --> Cit
+reaction,R11,Cit --> NADH + a_KG
+reaction,R12,OAA -->  Cit
+reaction,R13,Cit --> OAA + Acetyl_CoA
+reaction,R14,Acetyl_CoA --> Fatty_acids_Acetylation
+reaction,R16,Lactate <--> NAD + NADH + Pyruvate
+reaction,R17,Pyruvate <--> Glu + a_KG + Alanine
+reaction,R18,Alanine --> Alanine
+reaction,PYK,PEP --> Pyruvate
+reaction,R20,2_PG <--> PEP
+reaction,R21,3_PG <--> 2_PG
+reaction,R22,1_3_BPG <--> 3_PG
+reaction,R23,GAP <--> 1_3_BPG
+reaction,R24,GAP <--> DHAP
+reaction,R25,Fru_1_6_P <--> DHAP
+reaction,R26,GAP <--> Fru_1_6_P
+reaction,PFK,Fru_6_P --> Fru_1_6_P
+reaction,FBP1,Fru_1_6_P --> Fru_6_P
+reaction,R29,Fru_6_P <--> Glc_6_P 
+reaction,R30,Glc_6_P <--> Glc_1_P
+reaction,R31,Glc_1_P <--> Glycogen
+reaction,HK,Glc_6_P --> PPP +Ribose_5_P + NADPH
+reaction,R33,Glucose -->  Glc_6_P
+reaction,R34,Fru_6_P --> Hexosamine_pathway + Glycosylation + O_GlcNacylation
+reaction,R35,DHAP <--> Glycerol_P
+reaction,R36,Glycerol_P --> Lipid_glycerol_backbone
+reaction,GK,Glycerol --> Glycerol_P
+reaction,PCK1,OAA --> PEP
+reaction,R39,Mal --> OAA
+reaction,R40,OAA --> Amino_acids
+reaction,R41,Asp --> Nucleotides_Asparagine
+reaction,R42,Asp --> OAA
+reaction,R43,GAP --> PPP +Ribose_5_P + NADPH
+reaction,R44,Fru_6_P --> PPP
+reaction,R45,3_PG --> Serine_Glycine +1C_units +Nucleotides

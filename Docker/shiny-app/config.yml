@@ -1,0 +1,23 @@
+default:
+    example.gene.de.path: "https://artyomovlab.wustl.edu/publications/supp_materials/GAM/Ctrl.vs.MandLPSandIFNg.gene.de.tsv"
+    example.met.de.path:  "https://artyomovlab.wustl.edu/publications/supp_materials/GAM/Ctrl.vs.MandLPSandIFNg.met.de.tsv"
+
+    vizmap.url: "https://artyomovlab.wustl.edu/publications/supp_materials/GAM/GAM_VizMap.xml"
+
+    path.to.kegg.network:         "https://artyomovlab.wustl.edu/publications/supp_materials/GATOM/network.kegg.rds"
+    path.to.rhea.network:         "https://artyomovlab.wustl.edu/publications/supp_materials/GATOM/network.rhea.rds"
+    path.to.lipid.network:        "https://artyomovlab.wustl.edu/publications/supp_materials/GATOM/network.rhea.lipids.rds"
+
+    path.to.met.kegg.db:          "https://artyomovlab.wustl.edu/publications/supp_materials/GATOM/met.kegg.db.rds"
+    path.to.met.rhea.db:          "https://artyomovlab.wustl.edu/publications/supp_materials/GATOM/met.rhea.db.rds"
+    path.to.met.lipid.db:         "https://artyomovlab.wustl.edu/publications/supp_materials/GATOM/met.lipids.db.rds"
+
+    path.to.org.Mm.eg.gatom.anno:   "https://artyomovlab.wustl.edu/publications/supp_materials/GATOM/org.Mm.eg.gatom.anno.rds"
+    path.to.org.Hs.eg.gatom.anno:   "https://artyomovlab.wustl.edu/publications/supp_materials/GATOM/org.Hs.eg.gatom.anno.rds"
+    path.to.org.At.tair.gatom.anno: "https://artyomovlab.wustl.edu/publications/supp_materials/GATOM/org.At.tair.gatom.anno.rds"
+    path.to.org.Sc.sgd.gatom.anno:  "https://artyomovlab.wustl.edu/publications/supp_materials/GATOM/org.Sc.sgd.gatom.anno.rds"
+
+    path.to.gene2reaction.rhea.hsa.eg: "https://artyomovlab.wustl.edu/publications/supp_materials/GATOM/gene2reaction.rhea.hsa.eg.tsv"
+    path.to.gene2reaction.rhea.mmu.eg: "https://artyomovlab.wustl.edu/publications/supp_materials/GATOM/gene2reaction.rhea.mmu.eg.tsv"
+    path.to.gene2reaction.rhea.ath.eg: "https://artyomovlab.wustl.edu/publications/supp_materials/GATOM/gene2reaction.rhea.ath.eg.tsv"
+    path.to.gene2reaction.rhea.sce.eg: "https://artyomovlab.wustl.edu/publications/supp_materials/GATOM/gene2reaction.rhea.sce.eg.tsv"

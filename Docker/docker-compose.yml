@@ -1,0 +1,38 @@
+version: "3.8"
+
+services:
+  web:
+    build:
+        context: .
+        dockerfile: docker/Dockerfile
+    container_name: cate-web
+    volumes:
+      # Mount the files to $HOME/app
+      - ./shiny-app:/app
+    depends_on:
+      - db
+    networks:
+      - db_network
+    
+
+  db:
+    image: mariadb:10.3.38
+    container_name: cate-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Pomza
+      MYSQL_DATABASE: CATE
+      MYSQL_USER: Tarcin
+      MYSQL_PASSWORD: DumanRS
+    volumes:
+      - .:/docker-entrypoint-initdb.d
+      - .:/etc/mysql/conf.d/my.cnf
+      
+    networks:
+      - db_network
+
+volumes:
+  mariadb:
+
+networks:
+  db_network:
